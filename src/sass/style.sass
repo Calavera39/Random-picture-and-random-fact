@@ -1,0 +1,70 @@
+@import 'bootstrap-reboot.min'
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap')
+
+
+
+*
+    font-family: 'Poppins', 'sans-serif'
+    margin: 0
+    padding: 0
+
+
+.container
+    width: 1111px
+    margin: 0 auto
+    height: 100%
+
+.random
+    background: url('../img/bg.jpg') center center/cover no-repeat
+    position: relative
+    padding: 30px
+    &__title
+        margin-top: 50px
+        text-align: center
+    &__img
+        position: relative
+        border: 2px black solid
+        height: 400px
+        width: 300px
+        padding: 20px
+        box-shadow: 27px 51px 8px 0px rgba(34, 60, 80, 0.2)
+        margin: 0 auto
+        margin-top: 40px
+        padding-bottom: 50px
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__fact
+        position: relative
+        border: 2px black solid
+        min-height: 200px
+        width: 400px
+        padding: 20px
+        box-shadow: 27px 51px 8px 0px rgba(34, 60, 80, 0.2)
+        margin: 0 auto
+        margin-top: 40px
+        padding-bottom: 50px
+    &__button
+        border: 1px pink solid
+        height: 50px
+        width: 110px
+        transition: 0.5s all
+        &:hover
+            background-color: red
+        &:active
+            transition: 0.1s
+            background-color: black
+            font-size: 20px
+            color: white
+    #img
+        position: absolute
+        bottom: 0
+        right: 100px
+    #fact
+        position: absolute
+        bottom: 0
+        right: 150px
+
+
+@import 'media'
